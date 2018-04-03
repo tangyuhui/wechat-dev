@@ -1,0 +1,35 @@
+/* pages/login/login.wxss */
+page{
+   background-color:#fff;
+}
+ 
+.company-icon{
+    margin-top:10%;
+    text-align: center;
+}
+ 
+.form-container{
+  margin-top:30rpx;
+  padding:10px;
+}
+.form-text{
+ font-size:16px;
+ padding:10px;
+}
+.form-input{
+  border-bottom:1px solid #eee;
+  padding:0px 10px 5px 10px;
+  font-size:16px;
+}
+.form-input-password{
+  position:relative;
+}
+.forget-password{
+  position:absolute;
+  right:0px;
+  top:0px;
+  color:#ccc;
+}
+.login-btn{
+  margin-top:50rpx;
+}

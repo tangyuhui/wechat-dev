@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+     "pages/user/user"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#eeeeee"
+  }, 
+  "tabBar": {
+    "selectedColor": "#07BC03",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户中心"
+      }
+    ]
+  },
+   "debug": true 
+}

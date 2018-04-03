@@ -1,0 +1,45 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="content-sec section-1">
+    <view class="sec-title clearfix">
+      <text class="title">精品推荐</text>
+      <text class="right-green-title ">全部精品</text>
+    </view>
+    <view class="box">
+      <view class="column">
+        <view class="item"><image src='/images/recommend/index_01.png' class="recom-img">  </image></view>
+        <view class="item"><image src='/images/recommend/index_05.png' class="recom-img">  </image></view>
+      </view>
+      <view class="column">
+        <view class="item"><image src='/images/recommend/index_09.png' class="recom-img">  </image></view>
+        <view class="item"><image src='/images/recommend/index_10.png' class="recom-img">  </image></view>
+      </view>
+    </view>
+  </view>
+    <view class="content-sec section-1">
+    <view class="sec-title">
+      <text class="title">热门评测</text>
+    </view>
+     <view class="hot-content">
+       <view class="hot-content-block">
+          <image src='/images/pic-1.png' class="pic-block"></image>
+          <text class="h2">美丽青年-魅族魅蓝E</text>
+          <text class="paragraph">一个接一个的点点滴滴多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多哈哈哈</text>
+       </view>
+     <view class="hot-content-block">
+          <image src='/images/pic-2.png' class="pic-block"></image>
+          <text class="h2">美丽青年-魅族魅蓝E</text>
+          <text class="paragraph">一个接一个的点点滴滴多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多哈哈哈</text>
+       </view>
+     </view>
+
+  </view>
+</view>
