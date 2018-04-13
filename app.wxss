@@ -2,5 +2,31 @@
  page{
  display: block;  
   min-height: 100%;  
-  background-color: #eee;  
+  background-color:#f4f4f4 ;
+}
+.g5d{
+  color:#5d5d5d;
+}
+.flex{
+   display: flex;
+ }
+.flex.space-between{
+   justify-content: space-between;
+}
+.bold{
+font-weight: bold;
+}
+.tc{text-align:center;}
+ 
+.pt8{
+padding-top:8px;
+}
+.f16{
+  font-size:16px;
+}
+.mt10{
+  margin-top:10px;
+}
+.ml5{
+  margin-left:5px;
 }

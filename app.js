@@ -2,6 +2,7 @@
 var config = require("./config");
 App({
   onLaunch: function () {
+    var that=this
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -13,29 +14,39 @@ App({
         if (res.code) {
           console.log(res.code);
           //发起网络请求
-          // wx.request({
-          //   url: 'http://tang.wezoz.com/onLogin',
-          //   data: {
-          //     code: res.code
-          //   },
-          //   success:function(res){
-          //    console.log(res.data);
-          //   }
-          // })
+          wx.request({
+            url: 'http://localhost:3000/wechat/onLogin',
+            data: {
+              code: res.code
+            },
+            success:function(res){
+             console.log(res.data);
+             that.getUserInfo();
+            }
+          })
+         
         } else {
           console.log('获取用户登录态失败！' + res.errMsg)
         }
       }
-    });
+    }); 
+  },
+  
+  globalData: {
+    userInfo: null
+  },
+  getUserInfo:function(){
     // 获取用户信息
     wx.getSetting({
       success: res => {
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
+            withCredentials: true,
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
-              this.globalData.userInfo = res.userInfo
+              //  this.globalData.userInfo = res.userInfo
+              console.log(res);
 
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
@@ -47,8 +58,5 @@ App({
         }
       }
     })
-  },
-  globalData: {
-    userInfo: null
   }
 })

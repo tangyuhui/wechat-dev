@@ -1,19 +1,15 @@
 /* pages/user/user.wxss */
-.index-container{
-  width: 100%;
-  height: 100%;
-  position: relative;
+.top-bar{
+  height:70px;
+  padding:10px;
+  background: #fff;
  
 }
-
-.index-container image{
-  width: 100%;
-  height: 550px;
+.logo{
+  width:59px;
+  height:57px;
+  vertical-align:middle;
 }
-
-.nickname{
-  position: absolute;
-  top: 170px;
-  left: 120px;
-  font-size: 25px;
+.zc{
+  vertical-align: middle;
 }

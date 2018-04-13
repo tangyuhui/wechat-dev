@@ -1,8 +1,9 @@
 <!--pages/user/user.wxml-->
 
-<view class="index-container">
-   <!-- <image  src="/images/uc.jpg" ></image> -->
-   <view class="nickname">
-      {{username}}
+<view>
+  <navigator url="../login/login">
+   <view class="top-bar">
+    <image src='../../images/logo.png' class="logo"> </image><text class="ml5 zc ">登录/注册</text>
    </view>
+ </navigator>
 </view>

@@ -12,7 +12,7 @@ Page({
     if (!app.globalData.userinfo) {
     //   wx.navigateTo({ url: "../login/login" })
 
-      wx.redirectTo({ url: "../login/login" })
+      // wx.redirectTo({ url: "../login/login" })
     } else {
 
       this.setData({ username: app.globalData.userinfo.username })
