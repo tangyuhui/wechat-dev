@@ -1,0 +1,39 @@
+<template name="item">
+<view class="item">
+    <view class="left">
+       <view><text class="rate">{{item.rate}}</text></view>
+       <view><text class="text">7日年化收益率</text></view>
+    </view>
+    <view class="right">
+       <view class="p-name-b"><text class="p-name">{{item.name}}</text></view>
+       <view class="flex space-between pro-intro">
+         <view>
+         <view class="f16 bold">{{item.deadline}}</view> 
+        <view class="g5d f16">投资期限</view> 
+         </view>
+         <view>
+         <view class="f16 bold tc" >{{item.purAmount}}</view> 
+        <view class="g5d f16">起购金额</view> 
+         </view>
+       </view>
+    </view>
+</view>
+   
+</template>
+
+<!-- 理财列表组件 供每一个列表展示的页面使用 -->
+<template name="product-list">
+  <view class="list">
+   <template is="item" data="{{ item }}" wx:for="{{ products }}" wx:key="id"/>
+    <view class="tips">
+      <view wx:if="{{ hasMore }}">
+        <image src="/images/common/loading.gif" mode="aspectFill"/>
+        <text>玩了命的加载中...</text>
+      </view>
+      <view wx:else class="tc pt8">
+        <text class="f16">没有更多内容了~</text>
+      </view>
+    </view>
+  </view>
+  <loading hidden="{{ !loading }}">加载中...</loading>
+</template>

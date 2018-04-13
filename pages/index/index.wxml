@@ -1,0 +1,7 @@
+<import src="../common/productList/product-list"/>
+<view class="container">
+  <!-- <view class="header">
+    <text>{{ subtitle }}</text>
+  </view> -->
+  <template is="product-list" data="{{ products, loading, hasMore }}"/>
+</view>

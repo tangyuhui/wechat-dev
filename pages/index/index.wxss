@@ -1,0 +1,9 @@
+@import "../common/productList/product-list.wxss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid #ccc;
+}
+
+ 

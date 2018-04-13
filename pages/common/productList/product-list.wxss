@@ -1,0 +1,44 @@
+/* pages/common/product-list.wxss */
+.list {
+  height: 100%;
+  padding-top:10rpx;
+}
+
+.list .item {
+  display: flex;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+  background:#fff;
+  padding:10px 8px;
+  align-items: center;
+}
+.list .item .left{
+  text-align: center;
+   width:40%;
+}
+.list .item .right{
+   width:60%;
+}
+.rate{
+  color:#ff6235;
+  font-size:22px;
+  font-weight: bold;
+}
+.text{
+  font-size:15px;
+    color:#363636;
+}
+ .p-name{
+  font-size:16px;
+  color:#000;
+
+ }
+ .p-name-b{
+   border-bottom: 1px dashed #f6f6f6;
+  padding-bottom:5px;
+  margin-bottom:8px;
+ }
+ .pro-intro{
+  padding-right:15px;
+ }
+ 
